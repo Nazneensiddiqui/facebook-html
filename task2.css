@@ -1,0 +1,31 @@
+.nevbar{
+    background-color: pink;
+    display: flex; justify-content: space-evenly; align-items: center;
+    
+}
+.nevbar ul { display: flex;
+gap:30px;
+list-style: none;}
+.head ul{
+    display: none;
+}
+.nevbar label{
+    display: none;
+}
+.nevbar label i{ color:blue;}
+
+#demo:checked~.head ul{
+    display: block;
+}
+
+@media screen and ( max-width:600px) {
+    .nevbar{ height: 90px;}
+    .nevbar ul {
+        display: none;
+        margin-top: 180px;}
+        .nevbar label{
+            display: block;
+        }
+}
+
+    
